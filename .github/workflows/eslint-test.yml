@@ -1,0 +1,15 @@
+name: eslint-test
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install dependences
+        run: make install
+
+      - name: eslint project test
+        run: make lint
