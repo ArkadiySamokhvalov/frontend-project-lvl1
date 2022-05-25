@@ -33,9 +33,12 @@ const startGame = (rounds = 0) => {
 
   if (userAnswer === correctAnswer) {
     game.printText(game.globalSettings.success);
-    const newRounds = rounds + 1;
 
-    if (game.checkRoundCount(newRounds)) {
+    /* eslint-disable no-param-reassign */
+    rounds += 1;
+    /* eslint-enable no-param-reassign */
+
+    if (game.checkRoundCount(rounds)) {
       return game.printText(game.globalSettings.win);
     }
 
