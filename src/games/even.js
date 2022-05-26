@@ -17,24 +17,20 @@ const startGame = (rounds = 0) => {
   const userAnswer = game.askAnswer();
   const correctAnswer = getCorrectAnswer(number);
 
-  if (userAnswer === correctAnswer) {
+  if (game.checkAnswer(userAnswer, correctAnswer)) {
     game.printText(game.globalSettings.success);
 
     /* eslint-disable no-param-reassign */
     rounds += 1;
     /* eslint-enable no-param-reassign */
-
-    if (game.checkRoundCount(rounds)) {
-      return game.printText(game.globalSettings.win);
-    }
-
-    startGame(rounds);
   } else {
     game.printText(game.globalSettings.fail(userAnswer, correctAnswer));
-    game.printText(game.globalSettings.loss);
+    return game.printText(game.globalSettings.loss);
   }
 
-  return null;
+  if (game.checkRoundCount(rounds)) return game.printText(game.globalSettings.win);
+
+  return startGame(rounds);
 };
 
 export default startGame;
