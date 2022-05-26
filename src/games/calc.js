@@ -17,7 +17,7 @@ const getRandomOperation = () => {
   return gameSettings.operators[game.getRandomInt(0, lastElemIndex)];
 };
 
-const getCorrectAnswer = (operator, number1, number2) => gameSettings.operations[operator](number1, number2);
+const getCorrectAnswer = (operator, num1, num2) => gameSettings.operations[operator](num1, num2);
 
 const startGame = (rounds = 0) => {
   if (rounds === 0) game.printText(gameSettings.rules);
