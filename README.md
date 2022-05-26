@@ -6,7 +6,7 @@
 [![Actions Status](https://github.com/ArkadiySamokhvalov/frontend-project-lvl1/workflows/eslint-test/badge.svg)](https://github.com/ArkadiySamokhvalov/frontend-project-lvl1/actions)
 
 ### Installation:
-[![asciicast](https://asciinema.org/a/8XvFXIdEUcPchaobpheJ4ea8Z.svg)](https://asciinema.org/a/8XvFXIdEUcPchaobpheJ4ea8Z)
+[![asciicast](https://asciinema.org/a/4YEBwDDuNfA59zzZx9erlClqb.svg)](https://asciinema.org/a/4YEBwDDuNfA59zzZx9erlClqb)
 
 ### Brain-even gameplay
 [![asciicast](https://asciinema.org/a/Ww8tRJIiOeo8hvou5vBKbvkqt.svg)](https://asciinema.org/a/Ww8tRJIiOeo8hvou5vBKbvkqt)
